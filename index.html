@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Atividades HTML</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: #f5f7fa;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        
+        th {
+            background-color: #40b1a2;
+            color: white;
+            text-align: left;
+            padding: 12px;
+        }
+        
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .link {
+            text-align: center;
+        }
+        
+        a {
+            color: #2196F3;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1rem;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+            
+            th, td {
+                padding: 8px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Portfólio de Atividades HTML</h1>
+        </header>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>02/04/2025</td>
+                    <td>Página principal da 1ª Atividade</td>
+                    <td class="link"><a href="sites/thiago-1p/index.html">Acessar</a></td>
+                </tr>
+                <tr>
+                    <td>22/04/2025</td>
+                    <td>Página principal sobre Redes de Computadores</td>
+                    <td class="link"><a href="sites/att3/index.html">Acessar</a></td>
+                </tr>
+                <tr>
+                    <td>01/05/2025</td>
+                    <td>Página principal de Predadores dos Oceanos</td>
+                    <td class="link"><a href="sites/att5/index.html">Acessar</a></td>
+                </tr>
+                <tr>
+                    <td>09/04/2025</td>
+                    <td>Página principal do filme</td>
+                    <td class="link"><a href="sites/att2/index.html">Acessar</a></td>
+                </tr>
+                <tr>
+                    <td>25/04/2025</td>
+                    <td>Loja Virtual em Tabela</td>
+                    <td class="link"><a href="sites/att4/index.html">Acessar</a></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <footer>
+            <p>&copy; 2025 Portfólio de Atividades HTML. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
