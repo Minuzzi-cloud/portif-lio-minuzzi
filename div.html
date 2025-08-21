@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Posicionamento com DIV</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 2000px; 
+    }
+
+    .caixa {
+      width: 200px;
+      height: 100px;
+      margin: 20px;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* STATIC - posição padrão */
+    .static {
+      background: teal;
+      position: static;
+    }
+
+    /* RELATIVE - relativo à posição normal */
+    .relative {
+      background: darkorange;
+      position: relative;
+      top: 20px;   /* desloca 20px para baixo */
+      left: 30px;  /* desloca 30px para a direita */
+    }
+
+    /* ABSOLUTE - relativo ao primeiro posicionado */
+    .container {
+      position: relative; /* define limite de referência */
+      border: 2px dashed gray;
+      padding: 50px;
+      margin: 20px;
+    }
+
+    .absolute {
+      background: crimson;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    /* FIXED - fixo na tela, não rola junto com a página */
+    .fixed {
+      background: darkblue;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    /* STICKY - gruda ao rolar, até o limite */
+    .sticky {
+      background: darkgreen;
+      position: sticky;
+      top: 0; /* cola no topo */
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo de posicionamento com DIV</h1>
+
+  <div class="caixa static">Posição: Static</div>
+
+  <div class="caixa relative">Posição: Relative</div>
+
+  <div class="container">
+    <p>Este é o contêiner (pai com <b>position: relative</b>)</p>
+    <div class="caixa absolute">Posição: Absolute</div>
+  </div>
+
+  <div class="caixa sticky">Posição: Sticky (role a página)</div>
+
+  <p>TESTE</p>
+  <p>TESTE</p>
+  <p>TESTE</p>
+  <p>TESTE</p>
+  <p>TESTE</p>
+
+  <div class="caixa fixed">Posição: Fixed</div>
+</body>
+</html>
